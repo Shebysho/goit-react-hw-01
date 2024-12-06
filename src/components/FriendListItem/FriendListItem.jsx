@@ -9,6 +9,7 @@ const FriendListItem = ({ avatar, name, isOnline }) => {
       <span className={statusClass}></span>
       <img className={styles.avatar} src={avatar} alt="User avatar" width="48" />
       <p className={styles.name}>{name}</p>
+      <p className={statusClass}>{isOnline ? 'Online' : 'Offline'}</p>
     </div>
   );
 };
